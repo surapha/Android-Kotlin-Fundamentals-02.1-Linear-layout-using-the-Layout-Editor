@@ -18,7 +18,8 @@
             style="@style/NameStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/name" />
+            android:text="@string/name"
+            android:textAlignment="center" />
 
         <ImageView
             android:id="@+id/star_image"
@@ -33,18 +34,20 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/bio_text"
+                style="@style/NameStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" />
+                android:lineSpacingMultiplier="1.2"
+                android:paddingStart="@dimen/layout_padding"
+                android:paddingLeft="@dimen/layout_padding"
+                android:paddingEnd="@dimen/layout_padding"
+                android:paddingRight="@dimen/layout_padding"
+                android:text="@string/bio"
+                android:textAlignment="viewStart" />
         </ScrollView>
 
-        <TextView
-            android:id="@+id/bio_text"
-            style="@style/NameStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
