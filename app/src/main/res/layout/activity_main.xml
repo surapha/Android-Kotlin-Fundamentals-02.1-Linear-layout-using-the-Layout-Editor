@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/yellow_star"
+    android:contentDescription="@string/yellow_star"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -13,10 +15,18 @@
 
         <TextView
             android:id="@+id/textView"
+            style="@style/NameStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/name"
-            style="@style/NameStyle" />
+            android:text="@string/name" />
+
+        <ImageView
+            android:id="@+id/star_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/yellow_star"
+            android:contentDescription="@string/yellow_star"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
