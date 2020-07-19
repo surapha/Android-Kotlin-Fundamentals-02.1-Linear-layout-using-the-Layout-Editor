@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/yellow_star"
     android:contentDescription="@string/yellow_star"
     tools:context=".MainActivity">
@@ -22,7 +22,8 @@
             android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/nickname_edit"
+            style="@style/NameStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
